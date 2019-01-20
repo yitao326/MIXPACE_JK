@@ -68,7 +68,7 @@ def send_mail(sender, psw, receiver, smtpserver, report_file, port):
     smtp.login(sender, psw)
     smtp.sendmail(sender, receiver, msg.as_string())
     smtp.quit()
-    ptint('test report email has send out !')
+    print('test report email has send out !')
 
 if __name__ == '__main__':
     all_case = add_case()       # 加载用例

@@ -1,10 +1,10 @@
 # coding:utf-8
 import os
-import ConfigParser
+import configparser
 
 cur_path = os.path.dirname(os.path.realpath(__file__))
 configPath = os.path.join(cur_path, "cfg.ini")
-conf = ConfigParser.ConfigParser()
+conf = configparser.ConfigParser()
 conf.read(configPath)
 
 smtp_server = conf.get("email", "smtp_server")
