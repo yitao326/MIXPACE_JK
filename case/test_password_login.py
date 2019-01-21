@@ -1,3 +1,7 @@
+'''
+密码登录接口
+验证码登录接口
+'''
 import requests
 import unittest
 # from case.test_loginblog import Blog
@@ -13,6 +17,9 @@ h = {
 class UserPasswordLogin(unittest.TestCase):
     '''用户使用手机号、密码登录'''
     def setUP(self):
+        pass
+
+    def tearDown(self):
         pass
 
     def test_password_login(self, phone="15300752801", password="111111"):
@@ -80,10 +87,23 @@ class UserPasswordLogin(unittest.TestCase):
         }
         r = requests.post(url, headers=h, data=body)
         result = r.json()
-        print(result)
 
         self.assertEqual(result['code'],204)
         self.assertEqual(result['message'],'手机号码格式不对')
+
+    def test_verify_code_login(self, phone="15300752801", password="111111"):
+        url = host + "/api/user_password_login"
+        body = {
+            "phone": phone,
+            "password": password
+        }
+        r = requests.post(url, headers=h, data=body)
+        result = r.json()
+        print(result)
+
+        self.assertEqual(result['code'], 200)
+        self.assertEqual(result['message'], '成功')
+        self.assertIsNotNone(result['data'], 'token')
 
 if __name__ == '__main__':
     unittest.main()
