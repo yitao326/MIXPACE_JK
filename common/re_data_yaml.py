@@ -10,14 +10,14 @@ cur = os.path.dirname(os.path.realpath(__file__))
 
 def get_token():
     '''从host.yaml读取token值'''
-    p = open(os.path.join(cur, "data.yaml"), encoding='UTF-8')
+    p = open(os.path.join(cur, "token.yaml"), encoding='UTF-8')
     t = yaml.load(p.read())
     p.close()
     return t["token"]
 
 def get_host():
     '''从host.yaml读取URL值'''
-    p = open(os.path.join(cur, "data.yaml"), encoding='UTF-8')
+    p = open(os.path.join(cur, "host.yaml"), encoding='UTF-8')
     h = yaml.load(p.read())
     p.close()
     return h["URL"]

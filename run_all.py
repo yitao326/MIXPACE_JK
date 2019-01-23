@@ -1,6 +1,13 @@
 # coding=utf-8
 import unittest
+import requests
 import os, time
+import yaml
+import re
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+from ruamel import yaml
 from common import re_data_yaml
 from config import HTMLTestRunner
 
@@ -9,21 +16,21 @@ cur_path = os.path.dirname(os.path.realpath(__file__))
 
 def login(phone="18638860376", password="111111"):
     '''登录获取token'''
-    url = re_data_yaml.get_host()
+    host = re_data_yaml.get_host()
     h = re_data_yaml.get_headers()
+    url = "%s" % host + "/api/user_password_login"
     body = {
         "phone": phone,
         "password": password
     }
     r = requests.post(url, headers=h, data=body)
     token = r.json()["data"]["token"]
-    print(token)
     # token = re.findall(r'token":"(.+?)"}}', r.text)[0]        # 正则提取动态token
     return token
 
 def write_yaml(value):
     '''把获取的token写入yaml文件中'''
-    ypath = os.path.join(cur_path, "common", "data.yaml")
+    ypath = os.path.join(cur_path, "common", "token.yaml")
     t = {"token":value}                                         # 需要写入的token值
     with open(ypath, "w", encoding="utf-8") as f:               # 写入到yaml文件中
         yaml.dump(t, f, Dumper=yaml.RoundTripDumper)

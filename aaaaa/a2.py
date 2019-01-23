@@ -1,5 +1,5 @@
 cur_path = os.path.abspath(os.path.join(os.path.dirname("__file__"), os.path.pardir))
-ypath = os.path.join(cur_path, "config",  "data.yaml")
+ypath = os.path.join(cur_path, "config",  "token.yaml")
 with open(ypath, 'r', encoding='utf-8') as file:
     data = yaml.load(file)
 host = data["URL"]
@@ -8,6 +8,6 @@ h = {
     "Content-Type":"application/x-www-form-urlencoded"
     }
 
-with open("../config/data.yaml", 'r', encoding='utf-8') as file:
+with open("../config/token.yaml", 'r', encoding='utf-8') as file:
     data = yaml.load(file)
     host = data["URL"]
