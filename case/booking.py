@@ -1,17 +1,15 @@
 '''
-官网预约接口
-H5访客登记
-扫码签到活动
+扫码签到活动：
+H5访客登记获取空间--/api/space_visitor
+H5访客登记--/api/visitor_register
+官网预约接口--/api/booking_submit
+官网预约成功后选择行业、人数、时间--/api/booking_edit
 '''
 import unittest
 import requests
 import random
+from common import re_data_yaml
 
-host = "http://114.55.255.164:8095"
-h = {
-    "User-Agent":"Mozilla/5.0 (Linux; U; Android 8.1.0; zh-cn; PBEM00 Build/OPM1.171019.026) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
-    "Content-Type":"application/x-www-form-urlencoded"
-    }
 mobile = '188' + str(random.randint(1000,9000)) + str(random.randint(1000,9000))
 class Booking(unittest.TestCase):
     '''官网、H5预约接口'''
@@ -20,7 +18,9 @@ class Booking(unittest.TestCase):
 
     def test_space_visitor(self, space_id=23):
         '''【H5】访客登记获取空间'''
-        url = host + "/api/space_visitor"
+        host = re_data_yaml.get_host()
+        h = re_data_yaml.get_headers()
+        url = "%s" % host + "/api/space_visitor"
         body = {
             "space_id": space_id
         }
@@ -31,9 +31,11 @@ class Booking(unittest.TestCase):
         self.assertEqual(result['message'], '成功')
         self.assertEqual(result['data']['sapce_name'], '米域太平18楼')
 
-    def test_visitor_register_01(self):
+    def test_visitor_register(self):
         '''【H5】访客登记--正常提交'''
-        url = host + "/api/visitor_register"
+        host = re_data_yaml.get_host()
+        h = re_data_yaml.get_headers()
+        url = "%s" % host + "/api/visitor_register"
         body = {
             "space_id":"23",                  # 空间id
             "source":"0eeetibszk",            # 访客登记标识
@@ -48,9 +50,11 @@ class Booking(unittest.TestCase):
         self.assertEqual(result['message'], '成功')
         self.assertIsNotNone(result['data']['member_list'])
 
-    def test_visitor_register_02(self):
+    def test_visitor_register_01(self):
         '''【H5】访客登记--同一用户十分钟内重复提交'''
-        url = host + "/api/visitor_register"
+        host = re_data_yaml.get_host()
+        h = re_data_yaml.get_headers()
+        url = "%s" % host + "/api/visitor_register"
         body = {
             "space_id": "23",
             "source": "0eeetibszk",
@@ -64,9 +68,11 @@ class Booking(unittest.TestCase):
         self.assertEqual(result['code'], 201)
         self.assertEqual(result['message'], '已提交，请勿重复提交')
 
-    def test_visitor_register_03(self):
+    def test_visitor_register_02(self):
         '''【H5】访客登记--二维码渠道号错误'''
-        url = host + "/api/visitor_register"
+        host = re_data_yaml.get_host()
+        h = re_data_yaml.get_headers()
+        url = "%s" % host + "/api/visitor_register"
         body = {
             "space_id": "23",
             "source": "0eeetiz",
@@ -80,9 +86,11 @@ class Booking(unittest.TestCase):
         self.assertEqual(result['code'], 201)
         self.assertEqual(result['message'], '渠道号不存在')
 
-    def test_visitor_register_04(self):
+    def test_visitor_register_03(self):
         '''【H5】访客登记--手机号输入错误'''
-        url = host + "/api/visitor_register"
+        host = re_data_yaml.get_host()
+        h = re_data_yaml.get_headers()
+        url = "%s" % host + "/api/visitor_register"
         body = {
             "space_id": "23",
             "source": "0eeetibszk",
@@ -98,7 +106,9 @@ class Booking(unittest.TestCase):
 
     def test_booking_submit(self):
         '''官网预约--正常预约'''
-        url = host + "/api/booking_submit"
+        host = re_data_yaml.get_host()
+        h = re_data_yaml.get_headers()
+        url = "%s" % host + "/api/booking_submit"
         body = {
             "space_id": "23",
             "sign": "80cb71a85f144b564614d4a9882d45fa",
@@ -116,7 +126,9 @@ class Booking(unittest.TestCase):
     @unittest.skip('test_booking_submit_01')                # 不执行该条用例
     def test_booking_submit_01(self):
         '''官网预约--渠道号错误'''
-        url = host + "/api/booking_submit"
+        host = re_data_yaml.get_host()
+        h = re_data_yaml.get_headers()
+        url = "%s" % host + "/api/booking_submit"
         body = {
             "space_id": "23",
             "sign": "80cb71a85f144b564614d4a9882d45fa",
@@ -132,9 +144,11 @@ class Booking(unittest.TestCase):
         self.assertEqual(result['message'], '参数错误')
 
     @unittest.skip('booking_edit')
-    def booking_edit(self):
+    def test_booking_edit(self):
         '''官网预约成功后选择行业、人数、时间'''
-        url = host + "/api/booking_edit"
+        host = re_data_yaml.get_host()
+        h = re_data_yaml.get_headers()
+        url = "%s" % host + "/api/booking_edit"
         body = {
             "id": "23",
             "wish": "1",

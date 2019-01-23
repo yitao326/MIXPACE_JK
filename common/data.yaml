@@ -1,0 +1,19 @@
+token: gmYtPd20Yh4z9IF9yzDpmDV7wjm7s40qHRlLkp6gVmfccbY4vxWItsSyuP4cSfcs
+
+# 8095测试环境
+URL: http://114.55.255.164:8095
+
+# 8096测试环境
+#URL: http://114.55.255.164:8096
+
+# 8097测试环境
+#URL: http://114.55.255.164:8097
+
+# 8098测试环境
+#URL: http://114.55.255.164:8098
+
+# 8099测试环境
+#URL: http://114.55.255.164:8099
+
+# 线上环境（正式）
+#URL: http://sapi.mixpace.com

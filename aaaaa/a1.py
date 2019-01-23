@@ -1,18 +1,13 @@
+from common import re_data_yaml
 import requests
-import re
 
-host = "http://114.55.255.164:8095"
-h = {
-    "User-Agent":"Mozilla/5.0 (Linux; U; Android 8.1.0; zh-cn; PBEM00 Build/OPM1.171019.026) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
-    "Content-Type":"application/x-www-form-urlencoded"
-    }
-
-url = host + "/api/user_password_login"
+url = re_data_yaml.get_host()
+h = re_data_yaml.get_headers()
 body = {
     "phone": 15300752801,
-    "password": 111111
+    "password": 1111111
 }
 r = requests.post(url, headers=h, data=body)
-result = r.json()
-
-print(result)
+print(r.json())
+# token = r.json()["data"]["token"]
+# print(token)
