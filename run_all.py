@@ -1,41 +1,15 @@
 # coding=utf-8
 import unittest
-import requests
 import os, time
-import yaml
-import re
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-from ruamel import yaml
-from common import re_data_yaml
 from config import HTMLTestRunner
 
 # 当前脚本所在的真实路径（cur_path参数是读取当前脚本的真实路径，也就是run_main.py的真实路径）
 cur_path = os.path.dirname(os.path.realpath(__file__))
 
-def login(phone="18638860376", password="111111"):
-    '''登录获取token'''
-    host = re_data_yaml.get_host()
-    h = re_data_yaml.get_headers()
-    url = "%s" % host + "/api/user_password_login"
-    body = {
-        "phone": phone,
-        "password": password
-    }
-    r = requests.post(url, headers=h, data=body)
-    token = r.json()["data"]["token"]
-    # token = re.findall(r'token":"(.+?)"}}', r.text)[0]        # 正则提取动态token
-    return token
-
-def write_yaml(value):
-    '''把获取的token写入yaml文件中'''
-    ypath = os.path.join(cur_path, "common", "token.yaml")
-    t = {"token":value}                                         # 需要写入的token值
-    with open(ypath, "w", encoding="utf-8") as f:               # 写入到yaml文件中
-        yaml.dump(t, f, Dumper=yaml.RoundTripDumper)
-
-def add_case(caseName="case", rule="test*.py"):             # caseName="case"这个case是存放用例的文件夹，如果运行其他文件夹的用例，则修改caseName这个参数值；tule="test*.py"匹配用例脚本名称的规则，默认匹配test开头的所有用例
+def add_case(caseName="case", rule="test_*.py"):             # caseName="case"这个case是存放用例的文件夹，如果运行其他文件夹的用例，则修改caseName这个参数值；tule="test*.py"匹配用例脚本名称的规则，默认匹配test开头的所有用例
     '''加载所有测试用例'''
     case_path = os.path.join(cur_path, caseName)            # 用例文件夹
     # if not os.path.exists(case_path):os.mkdir(case_path)    # 如果不存在case文件夹，则自动创建
@@ -45,7 +19,7 @@ def add_case(caseName="case", rule="test*.py"):             # caseName="case"这
 
 def run_case(all_case, reportName="report"):
     '''执行所有用例，并生成HTML测试报告'''
-    now = time.strftime("%Y_%m_%d_%H_%M_%S")
+    now = time.strftime("%Y_%m_%d %H_%M")
     report_path = os.path.join(cur_path, reportName)
     report_abspath = os.path.join(report_path, now+"result.html")
     print("report path:%s"%report_abspath)
@@ -95,12 +69,10 @@ def get_report_file(report_path):
     # print('邮件发送成功!')
 
 if __name__ == '__main__':
-    token = login("15300752801", "111111")  # 1.登录
-    write_yaml(token)                       # 2、写入token
     all_case = add_case()       # 加载用例
     run_case(all_case)          # 执行用例
-    # report_path = os.path.join(cur_path, "report")          # 生成测试报告路径
-    # report_file = get_report_file(report_path)              # 获取最新的测试报告
+    report_path = os.path.join(cur_path, "report")          # 生成测试报告路径
+    report_file = get_report_file(report_path)              # 获取最新的测试报告
 
     # # 邮箱配置
     # from config import readConfig

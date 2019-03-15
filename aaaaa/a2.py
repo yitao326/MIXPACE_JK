@@ -1,13 +1,25 @@
-cur_path = os.path.abspath(os.path.join(os.path.dirname("__file__"), os.path.pardir))
-ypath = os.path.join(cur_path, "config",  "token.yaml")
-with open(ypath, 'r', encoding='utf-8') as file:
-    data = yaml.load(file)
-host = data["URL"]
-h = {
-    "User-Agent":"Mozilla/5.0 (Linux; U; Android 8.1.0; zh-cn; PBEM00 Build/OPM1.171019.026) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
-    "Content-Type":"application/x-www-form-urlencoded"
-    }
+import requests
+import unittest
+import time
+from common import re_data_yaml
+from aaaaa import a3
 
-with open("../config/token.yaml", 'r', encoding='utf-8') as file:
-    data = yaml.load(file)
-    host = data["URL"]
+class MeetingOption(unittest.TestCase):
+    def test_meeting_order_create(self):
+        '''预定会议室接口-预定已过时间的会议室'''
+        host = re_data_yaml.get_host()
+        h = re_data_yaml.get_headers()
+        url = host + "/api/meeting_order_create"
+        body = {
+            "office_id": 55,                        # 会议室id
+            "start_time": "%s"%a3.whole_time(),     # 预定会议室开始时间
+            "end_time": "%s"%a3.semih_time()        # 预定会议室结束时间
+        }
+        r = requests.post(url, headers=h, data=body)
+        result = r.json()
+
+        self.assertEqual(result["code"], 201)
+        self.assertEqual(result["message"], "参数错误，无法预定会议室")
+
+if __name__ == '__main__':
+    unittest.TestCase()

@@ -20,7 +20,7 @@ class Booking(unittest.TestCase):
         '''【H5】访客登记获取空间'''
         host = re_data_yaml.get_host()
         h = re_data_yaml.get_headers()
-        url = "%s" % host + "/api/space_visitor"
+        url = host + "/api/space_visitor"
         body = {
             "space_id": space_id
         }
@@ -35,7 +35,7 @@ class Booking(unittest.TestCase):
         '''【H5】访客登记--正常提交'''
         host = re_data_yaml.get_host()
         h = re_data_yaml.get_headers()
-        url = "%s" % host + "/api/visitor_register"
+        url = host + "/api/visitor_register"
         body = {
             "space_id":"23",                  # 空间id
             "source":"0eeetibszk",            # 访客登记标识
@@ -54,7 +54,7 @@ class Booking(unittest.TestCase):
         '''【H5】访客登记--同一用户十分钟内重复提交'''
         host = re_data_yaml.get_host()
         h = re_data_yaml.get_headers()
-        url = "%s" % host + "/api/visitor_register"
+        url = host + "/api/visitor_register"
         body = {
             "space_id": "23",
             "source": "0eeetibszk",
@@ -72,7 +72,7 @@ class Booking(unittest.TestCase):
         '''【H5】访客登记--二维码渠道号错误'''
         host = re_data_yaml.get_host()
         h = re_data_yaml.get_headers()
-        url = "%s" % host + "/api/visitor_register"
+        url = host + "/api/visitor_register"
         body = {
             "space_id": "23",
             "source": "0eeetiz",
@@ -90,7 +90,7 @@ class Booking(unittest.TestCase):
         '''【H5】访客登记--手机号输入错误'''
         host = re_data_yaml.get_host()
         h = re_data_yaml.get_headers()
-        url = "%s" % host + "/api/visitor_register"
+        url = host + "/api/visitor_register"
         body = {
             "space_id": "23",
             "source": "0eeetibszk",
@@ -108,7 +108,7 @@ class Booking(unittest.TestCase):
         '''官网预约--正常预约'''
         host = re_data_yaml.get_host()
         h = re_data_yaml.get_headers()
-        url = "%s" % host + "/api/booking_submit"
+        url = host + "/api/booking_submit"
         body = {
             "space_id": "23",
             "sign": "80cb71a85f144b564614d4a9882d45fa",
@@ -128,7 +128,7 @@ class Booking(unittest.TestCase):
         '''官网预约--渠道号错误'''
         host = re_data_yaml.get_host()
         h = re_data_yaml.get_headers()
-        url = "%s" % host + "/api/booking_submit"
+        url = host + "/api/booking_submit"
         body = {
             "space_id": "23",
             "sign": "80cb71a85f144b564614d4a9882d45fa",
@@ -148,7 +148,7 @@ class Booking(unittest.TestCase):
         '''官网预约成功后选择行业、人数、时间'''
         host = re_data_yaml.get_host()
         h = re_data_yaml.get_headers()
-        url = "%s" % host + "/api/booking_edit"
+        url = host + "/api/booking_edit"
         body = {
             "id": "23",
             "wish": "1",

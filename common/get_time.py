@@ -27,9 +27,17 @@ def whole_semih_time():
     now_semih_time = time.strftime("%Y-%m-%d %H:%M:%S", time_local)
     return now_semih_time
 
+def whole_semih_times():
+    '''当前整点时间 + 90分钟'''
+    now_time = datetime.datetime.now().strftime("%Y-%m-%d %H") + ":00:00"
+    today_start_time = int(time.mktime(time.strptime(str(now_time), '%Y-%m-%d %H:%M:%S'))) + 5400
+    time_local = time.localtime(today_start_time)
+    now_semih_time = time.strftime("%Y-%m-%d %H:%M:%S", time_local)
+    return now_semih_time
+
 if __name__ == '__main__':
     print(now_time())
     print(semih_time())
     print(whole_time())
     print(whole_semih_time())
-
+    print(whole_semih_times())
