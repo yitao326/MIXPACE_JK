@@ -6,7 +6,7 @@ from common import get_time
 from ruamel import yaml
 import warnings
 warnings.filterwarnings("ignore")
-current_path = os.path.abspath(os.path.dirname(__file__))
+curPath = os.path.abspath(os.path.join(os.path.dirname("__file__"), os.path.pardir))
 cur = os.path.dirname(os.path.realpath(__file__))
 
 def get_tokens(phone, password):
@@ -46,7 +46,7 @@ def get_headers():
     headers = {
         "User-Agent": "Mozilla/5.0 (Linux; U; Android 8.1.0; zh-cn; PBEM00 Build/OPM1.171019.026) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
         "Content-Type": "application/x-www-form-urlencoded",
-        "token": "%s"%get_tokens(15300752800, 111111)
+        "token": "%s" % get_tokens(15300752800, 111111)
     }
     return headers
 
@@ -67,9 +67,11 @@ def get_host():
 
 def get_order_code():
     "获取会议室订单code"
-    with open(current_path + '/../common/' + 'token.yaml', 'r') as f:
-        temp = yaml.load(f.read())
+    get_tokens(15300752800, 111111)
+    p = open(os.path.join(curPath, "common", "token.yaml"), encoding='UTF-8')
+    temp = yaml.load(p.read(), Loader=yaml.Loader)
     token = temp["token"]
+
     number = random.randint(1, 54)
     host = get_host()
     h = {
@@ -86,16 +88,15 @@ def get_order_code():
     r = requests.post(url, headers=h, data=body)
 
     # 获取的order_code值写入到order_code.yaml文件
-    ypath = os.path.join(cur, "order_code.yaml")
+    ypath = os.path.join(curPath, "order_code.yaml")
     order_code = r.json()["data"]["order_code"]
-    t = {"order_code": "%s" % order_code}               # 需要写入的order_code值
-    with open(ypath, "w", encoding="utf-8") as f:       # 写入到yaml文件中
+    t = {"order_code": "%s" % order_code}                   # 需要写入的order_code值
+    with open(ypath, "w", encoding="utf-8") as f:           # 写入到yaml文件中
         yaml.dump(t, f, Dumper=yaml.RoundTripDumper)
 
-    # 从order_code.yaml文件中读取token数据
-    p = open(os.path.join(cur, "order_code.yaml"), encoding='UTF-8')
+    # 从order_code.yaml文件中读取order_code数据
+    p = open(os.path.join(curPath, "order_code.yaml"), encoding='UTF-8')
     t = yaml.load(p.read(), Loader=yaml.Loader)
-    p.close()
     return t["order_code"]
 
 if __name__ == '__main__':

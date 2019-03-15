@@ -12,13 +12,15 @@
 
 import requests
 import unittest
-import os, yaml
 import random
 from common import re_data_yaml
 from common import get_time
+import warnings
+warnings.filterwarnings("ignore")
 from common.logger import Log
 log = Log()
-cur = os.path.dirname(os.path.realpath(__file__))
+import os, yaml
+curPath = os.path.abspath(os.path.join(os.path.dirname("__file__"), os.path.pardir, os.path.pardir))
 
 class MeetingOption(unittest.TestCase):
     '''会议室接口'''
@@ -140,24 +142,22 @@ class MeetingOption(unittest.TestCase):
         r = requests.post(url, headers=h, data=body)
         result = r.json()
 
+        self.assertTrue(result["data"]["order_code"])
         self.assertEqual(result["code"], 200)
         self.assertEqual(result["message"], "下单成功")
-        self.assertTrue(result["data"]["order_code"])
 
-    def test_order_pay(self):
+    def test_order_to_pay(self):
         '''会议室支付订单信息接口'''
         log.info("***会议室支付订单信息接口测试***")
-        p = open(os.path.join(cur, "token.yaml"), encoding='UTF-8')
-        t = yaml.load(p.read(), Loader=yaml.Loader)
-        p.close()
-        p = open(os.path.join(cur, "order_code.yaml"), encoding='UTF-8')
-        t1 = yaml.load(p.read(), Loader=yaml.Loader)
-        p.close()
+        re_data_yaml.get_tokens(15300752800, 111111)
+        p = open(os.path.join(curPath, "common", "token.yaml"), encoding='UTF-8')
+        temp = yaml.load(p.read(), Loader=yaml.Loader)
+        token = temp["token"]
 
-        r = re_data_yaml.get_tokens(15300752800, 111111)
-        r1 = re_data_yaml.get_order_code()
-        token = t["token"]
+        p = open(os.path.join(curPath, "common", "order_code.yaml"), encoding='UTF-8')
+        t1 = yaml.load(p.read(), Loader=yaml.Loader)
         order_code = t1["order_code"]
+
         host = re_data_yaml.get_host()
         url = host + "/api/order_to_pay"
         h = {
@@ -171,7 +171,97 @@ class MeetingOption(unittest.TestCase):
         r = requests.post(url, headers=h, data=body)
         result = r.json()
 
+        self.assertEqual(result["message"], "成功")
         self.assertEqual(result["code"], 200)
+        self.assertEqual(result["data"]["order_info"]["order_desc"], "会议室服务0.5小时")
+        self.assertEqual(result["data"]["member_account"]["pay_ways"][1]["name"], "支付宝")
+
+    def test_order_coupon_list(self):
+        '''获取会议室订单可用优惠券接口'''
+        log.info("***获取会议室订单可用优惠券接口测试***")
+        re_data_yaml.get_tokens(15300752800, 111111)
+        p = open(os.path.join(curPath, "common", "token.yaml"), encoding='UTF-8')
+        temp = yaml.load(p.read(), Loader=yaml.Loader)
+        token = temp["token"]
+
+        p = open(os.path.join(curPath, "common", "order_code.yaml"), encoding='UTF-8')
+        t1 = yaml.load(p.read(), Loader=yaml.Loader)
+        order_code = t1["order_code"]
+
+        host = re_data_yaml.get_host()
+        url = host + "/api/order_coupon_list"
+        h = {
+            "User-Agent": "Mozilla/5.0 (Linux; U; Android 8.1.0; zh-cn; PBEM00 Build/OPM1.171019.026) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
+            "Content-Type": "application/x-www-form-urlencoded",
+            "token": "%s" % token
+        }
+        body = {
+            "order_code": "%s" % order_code,
+            "account_id": 73,
+        }
+        r = requests.post(url, headers=h, data=body)
+        result = r.json()
+
+        self.assertEqual(result["message"], "获取成功")
+        self.assertEqual(result["code"], 200)
+        self.assertEqual(result["data"]["count"], 7)
+        self.assertEqual(result["data"]["list"][0]["coupon_name"], "自动化测试（勿动）")
+
+    def test_order_calculate(self):
+        '''会议室订单选择优惠券金额计算接口'''
+        log.info("***会议室订单选择优惠券金额计算接口测试***")
+        re_data_yaml.get_tokens(15300752800, 111111)
+        p = open(os.path.join(curPath, "common", "token.yaml"), encoding='UTF-8')
+        temp = yaml.load(p.read(), Loader=yaml.Loader)
+        token = temp["token"]
+
+        p = open(os.path.join(curPath, "common", "order_code.yaml"), encoding='UTF-8')
+        t1 = yaml.load(p.read(), Loader=yaml.Loader)
+        order_code = t1["order_code"]
+
+        host = re_data_yaml.get_host()
+        url = host + "/api/order_calculate"
+        h = {
+            "User-Agent": "Mozilla/5.0 (Linux; U; Android 8.1.0; zh-cn; PBEM00 Build/OPM1.171019.026) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
+            "Content-Type": "application/x-www-form-urlencoded",
+            "token": "%s" % token
+        }
+        body = {
+            "order_code": "%s" % order_code,
+            "account_id": 73,
+            "coupon_id": 1547705
+        }
+        r = requests.post(url, headers=h, data=body)
+        result = r.json()
+
+        self.assertEqual(result["message"], "成功")
+        self.assertEqual(result["code"], 200)
+        self.assertEqual(result["data"]["order_pay_price"], "0.00")
+        self.assertEqual(result["data"]["coupon_use_unit"], "0.50")
+
+    def test_order_pay(self):
+        '''会议室订单支付接口'''
+        log.info("***会议室订单支付接口***")
+        p = open(os.path.join(curPath, "common", "order_code.yaml"), encoding='UTF-8')
+        t1 = yaml.load(p.read(), Loader=yaml.Loader)
+        order_code = t1["order_code"]
+
+        host = re_data_yaml.get_host()
+        h = re_data_yaml.get_headers()
+        url = host + "/api/order_pay"
+        body = {
+            "order_code": "%s" % order_code,
+            "pay_way": 1,
+            "account_id": 73,
+            "coupon_id": 1547705
+        }
+        r = requests.post(url, headers=h, data=body)
+        result = r.json()
+
+        self.assertEqual(result["code"], 200)
+        self.assertEqual(result["message"], "成功")
+        self.assertEqual(result["data"]["data"]["status"], "True")
+        self.assertEqual(result["data"]["pay_way_name"], "米粒")
 
 if __name__ == '__main__':
     unittest.main()
