@@ -2,21 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81cae04f-4435-464a-bb1f-a63fe8e6e211" name="默认" comment="代码优化">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/wwwJK.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/wwwJK.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aaaaa/a1.py" beforeDir="false" afterPath="$PROJECT_DIR$/aaaaa/a1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aaaaa/a2.py" beforeDir="false" afterPath="$PROJECT_DIR$/aaaaa/a2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aaaaa/a3.py" beforeDir="false" afterPath="$PROJECT_DIR$/aaaaa/a3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case/booking.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/test_booking.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/user_login/test_login.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/host.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/common/host.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/logger.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/re_data_yaml.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/re_data_yaml.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/token.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/common/token.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2019_01_22.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/2019_01_23_22_06_45result.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_all.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_all.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/cfg.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config/cfg.ini" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +32,7 @@
     <SUITE FILE_PATH="coverage/wwwJK$Unittests_for_test_meeting_option_MeetingOption_test_meeting_order_create.coverage" NAME="Unittests for test_meeting_option.MeetingOption.test_meeting_order_create Coverage Results" MODIFIED="1552543526466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case/home page" />
     <SUITE FILE_PATH="coverage/wwwJK$Unittests_for_test_login_UserPasswordLogin_test_password_login.coverage" NAME="Unittests for test_login.UserPasswordLogin.test_password_login Coverage Results" MODIFIED="1548298153185" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
     <SUITE FILE_PATH="coverage/wwwJK$a3.coverage" NAME="a3 Coverage Results" MODIFIED="1548758371179" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aaaaa" />
-    <SUITE FILE_PATH="coverage/wwwJK$re_data_yaml.coverage" NAME="re_data_yaml Coverage Results" MODIFIED="1552549083086" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
+    <SUITE FILE_PATH="coverage/wwwJK$re_data_yaml.coverage" NAME="re_data_yaml Coverage Results" MODIFIED="1552647328652" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
     <SUITE FILE_PATH="coverage/mixpace_jk$loginblog.coverage" NAME="loginblog Coverage Results" MODIFIED="1547970271320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
     <SUITE FILE_PATH="coverage/wwwJK$Unittests_for_test_meeting_option_MeetingOption_test_meeting_list.coverage" NAME="Unittests for test_meeting_option.MeetingOption.test_meeting_list Coverage Results" MODIFIED="1552543233282" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case/home page" />
     <SUITE FILE_PATH="coverage/wwwJK$Unittests_for_test_meeting_option_MeetingOption_test_meeting_order_create_01.coverage" NAME="Unittests for test_meeting_option.MeetingOption.test_meeting_order_create_01 Coverage Results" MODIFIED="1552543620773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case/home page" />
@@ -53,13 +42,13 @@
     <SUITE FILE_PATH="coverage/wwwJK$get_time.coverage" NAME="get_time Coverage Results" MODIFIED="1552473976624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
     <SUITE FILE_PATH="coverage/wwwJK$Unittests_for_test_meeting_option_MeetingOption_test_meeting_order_create_02.coverage" NAME="Unittests for test_meeting_option.MeetingOption.test_meeting_order_create_02 Coverage Results" MODIFIED="1552550640884" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case/home page" />
     <SUITE FILE_PATH="coverage/wwwJK$a1__1_.coverage" NAME="a1 (1) Coverage Results" MODIFIED="1548312222259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
-    <SUITE FILE_PATH="coverage/wwwJK$run_all.coverage" NAME="run_all Coverage Results" MODIFIED="1552474720726" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/wwwJK$a2.coverage" NAME="a2 Coverage Results" MODIFIED="1548732910202" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aaaaa" />
+    <SUITE FILE_PATH="coverage/wwwJK$run_all.coverage" NAME="run_all Coverage Results" MODIFIED="1552656140220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/wwwJK$Unittests_in_test_space_py.coverage" NAME="Unittests in test_space.py Coverage Results" MODIFIED="1552462242493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case/home page/space" />
+    <SUITE FILE_PATH="coverage/wwwJK$a2.coverage" NAME="a2 Coverage Results" MODIFIED="1552646768949" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aaaaa" />
     <SUITE FILE_PATH="coverage/wwwJK$a5.coverage" NAME="a5 Coverage Results" MODIFIED="1550565332604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aaaaa" />
     <SUITE FILE_PATH="coverage/wwwJK$Unittests_in_a2_py.coverage" NAME="Unittests in a2.py Coverage Results" MODIFIED="1548733772397" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aaaaa" />
     <SUITE FILE_PATH="coverage/mixpace_jk$py_test_for_test_password_login_UserPasswordLogin_test_password_login_nothing.coverage" NAME="py.test for test_password_login.UserPasswordLogin.test_password_login_nothing Coverage Results" MODIFIED="1547969565167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
-    <SUITE FILE_PATH="coverage/wwwJK$Unittests_in_test_meeting_option_py.coverage" NAME="Unittests in test_meeting_option.py Coverage Results" MODIFIED="1552550658981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case/home page" />
+    <SUITE FILE_PATH="coverage/wwwJK$Unittests_in_test_meeting_option_py.coverage" NAME="Unittests in test_meeting_option.py Coverage Results" MODIFIED="1552646540008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case/home page" />
     <SUITE FILE_PATH="coverage/mixpace_jk$py_test_in_test_a2_py.coverage" NAME="py.test in test_a2.py Coverage Results" MODIFIED="1547965342536" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aaaaa" />
     <SUITE FILE_PATH="coverage/wwwJK$ke1.coverage" NAME="ke1 Coverage Results" MODIFIED="1547469850308" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lianxiJK" />
     <SUITE FILE_PATH="coverage/wwwJK$a3__1_.coverage" NAME="a3 (1) Coverage Results" MODIFIED="1548313110679" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
@@ -72,13 +61,14 @@
     <SUITE FILE_PATH="coverage/wwwJK$loginblog.coverage" NAME="loginblog Coverage Results" MODIFIED="1547546499957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
     <SUITE FILE_PATH="coverage/mixpace_jk$a3.coverage" NAME="a3 Coverage Results" MODIFIED="1547959756283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aaaaa" />
     <SUITE FILE_PATH="coverage/wwwJK$Unittests_in_test_adv_py.coverage" NAME="Unittests in test_adv.py Coverage Results" MODIFIED="1552468917625" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case/home page" />
-    <SUITE FILE_PATH="coverage/wwwJK$a1.coverage" NAME="a1 Coverage Results" MODIFIED="1552549574403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aaaaa" />
+    <SUITE FILE_PATH="coverage/wwwJK$a1.coverage" NAME="a1 Coverage Results" MODIFIED="1552646456119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aaaaa" />
     <SUITE FILE_PATH="coverage/wwwJK$Unittests_for_test_access_lock_data_AccessLockData_test_user_access_lock_data.coverage" NAME="Unittests for test_access_lock_data.AccessLockData.test_user_access_lock_data Coverage Results" MODIFIED="1549013499754" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case/access_lock" />
     <SUITE FILE_PATH="coverage/wwwJK$Unittests_for_test_meeting_option_MeetingOption_test_meeting_detail.coverage" NAME="Unittests for test_meeting_option.MeetingOption.test_meeting_detail Coverage Results" MODIFIED="1552543520598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case/home page" />
     <SUITE FILE_PATH="coverage/wwwJK$Unittests_for_test_official_OfficialWebsite_test_getspacecityenum.coverage" NAME="Unittests for test_official.OfficialWebsite.test_getspacecityenum Coverage Results" MODIFIED="1548904946969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case/official" />
     <SUITE FILE_PATH="coverage/mixpace_jk$run_main.coverage" NAME="run_main Coverage Results" MODIFIED="1548079928218" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/wwwJK$Unittests_for_test_meeting_option_MeetingOption_test_order_pay.coverage" NAME="Unittests for test_meeting_option.MeetingOption.test_order_pay Coverage Results" MODIFIED="1552551023671" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case/home page" />
+    <SUITE FILE_PATH="coverage/wwwJK$Unittests_for_test_meeting_option_MeetingOption_test_order_pay.coverage" NAME="Unittests for test_meeting_option.MeetingOption.test_order_pay Coverage Results" MODIFIED="1552632095469" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case/home page" />
     <SUITE FILE_PATH="coverage/wwwJK$test_login.coverage" NAME="test_login Coverage Results" MODIFIED="1547534631951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
+    <SUITE FILE_PATH="coverage/wwwJK$test_meeting_option.coverage" NAME="test_meeting_option Coverage Results" MODIFIED="1552645999626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case/home page" />
     <SUITE FILE_PATH="coverage/wwwJK$readConfig.coverage" NAME="readConfig Coverage Results" MODIFIED="1547543092258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/config" />
     <SUITE FILE_PATH="coverage/mixpace_jk$a2.coverage" NAME="a2 Coverage Results" MODIFIED="1547963914555" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aaaaa" />
   </component>
@@ -101,21 +91,23 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="33" />
-          <entry key="ini" value="6" />
+          <entry key="html" value="34" />
+          <entry key="ini" value="7" />
           <entry key="log" value="26" />
-          <entry key="py" value="157" />
-          <entry key="yaml" value="33" />
+          <entry key="pstat" value="1" />
+          <entry key="py" value="171" />
+          <entry key="yaml" value="44" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="33" />
-          <entry key="Ini" value="6" />
+          <entry key="HTML" value="34" />
+          <entry key="Ini" value="7" />
           <entry key="Log" value="25" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="157" />
-          <entry key="YAML" value="33" />
+          <entry key="Profiler Session" value="1" />
+          <entry key="Python" value="171" />
+          <entry key="YAML" value="44" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -123,7 +115,7 @@
           <entry key="dummy" value="44" />
           <entry key="ini" value="185" />
           <entry key="log" value="1" />
-          <entry key="py" value="24552" />
+          <entry key="py" value="25624" />
           <entry key="txt" value="9" />
           <entry key="yaml" value="120" />
         </counts>
@@ -133,7 +125,7 @@
           <entry key="Ini" value="185" />
           <entry key="Log" value="1" />
           <entry key="PLAIN_TEXT" value="53" />
-          <entry key="Python" value="24552" />
+          <entry key="Python" value="25624" />
           <entry key="YAML" value="120" />
         </counts>
       </usages-collector>
@@ -144,46 +136,79 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/re_data_yaml.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+            <state relative-caret-position="618">
+              <caret line="101" column="26" lean-forward="true" selection-start-line="101" selection-start-column="26" selection-end-line="101" selection-end-column="26" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
-                <marker date="1552549117222" expanded="true" signature="2142:3422" ph="..." />
+                <marker date="1552647328522" expanded="true" signature="2171:3519" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/order_code.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/host.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/case/home page/test_meeting_option.py">
+        <entry file="file://$PROJECT_DIR$/common/get_time.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="176" column="19" lean-forward="true" selection-start-line="176" selection-start-column="19" selection-end-line="176" selection-end-column="19" />
-              <folding>
-                <marker date="1552551023601" expanded="false" signature="461:480" ph="..." />
-                <marker date="1552551023601" expanded="true" signature="1054:2931" ph="..." />
-              </folding>
+            <state relative-caret-position="648">
+              <caret line="37" column="26" lean-forward="true" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/aaaaa/a1.py">
+        <entry file="file://$PROJECT_DIR$/config/cfg.ini">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/HTMLTestRunner.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/readConfig.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="29" column="1" selection-start-line="6" selection-end-line="32" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-70" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/token.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/run_all.py">
+        <entry file="file://$PROJECT_DIR$/common/logger.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1170">
-              <caret line="70" column="26" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
+            <state relative-caret-position="-556">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
@@ -200,6 +225,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>cur_path1</find>
+      <find>from sklearn.cross_validation import train_test_split</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -233,7 +259,6 @@
         <option value="$PROJECT_DIR$/case/test_verify_code_login.py" />
         <option value="$PROJECT_DIR$/case/test_password_login.py" />
         <option value="$PROJECT_DIR$/config/readConfig.py" />
-        <option value="$PROJECT_DIR$/config/cfg.ini" />
         <option value="$PROJECT_DIR$/run_main.py" />
         <option value="$PROJECT_DIR$/common/data.yaml" />
         <option value="$PROJECT_DIR$/logs/2019_01_22.log" />
@@ -242,7 +267,6 @@
         <option value="$PROJECT_DIR$/common/get_token.py" />
         <option value="$PROJECT_DIR$/common/a3.py" />
         <option value="$PROJECT_DIR$/case/test_booking.py" />
-        <option value="$PROJECT_DIR$/aaaaa/a2.py" />
         <option value="$PROJECT_DIR$/aaaaa/a3.py" />
         <option value="$PROJECT_DIR$/case/official/test_official.py" />
         <option value="$PROJECT_DIR$/case/official/test_official_website.py" />
@@ -250,7 +274,6 @@
         <option value="$PROJECT_DIR$/case/access_lock/test_access_lock_data.py" />
         <option value="$PROJECT_DIR$/aaaaa/a5.py" />
         <option value="$PROJECT_DIR$/case/home page/Startup Chart/test_start_advertisement.py" />
-        <option value="$PROJECT_DIR$/common/host.yaml" />
         <option value="$PROJECT_DIR$/case/home page/Startup Chart/test_advertisement.py" />
         <option value="$PROJECT_DIR$/case/user_login/test_login.py" />
         <option value="$PROJECT_DIR$/case/home page/advertisement/test_advertisement.py" />
@@ -261,9 +284,12 @@
         <option value="$PROJECT_DIR$/case/home page/test_advertisement.py" />
         <option value="$PROJECT_DIR$/case/meeting/test_meeting_option.py" />
         <option value="$PROJECT_DIR$/common/get_time.py" />
-        <option value="$PROJECT_DIR$/common/re_data_yaml.py" />
         <option value="$PROJECT_DIR$/aaaaa/a1.py" />
         <option value="$PROJECT_DIR$/case/home page/test_meeting_option.py" />
+        <option value="$PROJECT_DIR$/aaaaa/a2.py" />
+        <option value="$PROJECT_DIR$/common/re_data_yaml.py" />
+        <option value="$PROJECT_DIR$/common/host.yaml" />
+        <option value="$PROJECT_DIR$/config/cfg.ini" />
       </list>
     </option>
   </component>
@@ -308,24 +334,22 @@
             <path>
               <item name="wwwJK" type="b2602c69:ProjectViewProjectNode" />
               <item name="wwwJK" type="462c0819:PsiDirectoryNode" />
-              <item name="case" type="462c0819:PsiDirectoryNode" />
-              <item name="home page" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wwwJK" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wwwJK" type="462c0819:PsiDirectoryNode" />
-              <item name="case" type="462c0819:PsiDirectoryNode" />
-              <item name="user_login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wwwJK" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wwwJK" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="wwwJK" type="b2602c69:ProjectViewProjectNode" />
               <item name="wwwJK" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wwwJK" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wwwJK" type="462c0819:PsiDirectoryNode" />
+              <item name="logs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wwwJK" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wwwJK" type="462c0819:PsiDirectoryNode" />
+              <item name="report" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -365,7 +389,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for test_meeting_option.MeetingOption.test_order_pay">
+  <component name="RunManager" selected="Python.run_all">
     <configuration name="a1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="wwwJK" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -388,49 +412,70 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test_meeting_option.MeetingOption.test_meeting_option" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="a2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="wwwJK" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/case/home page" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/aaaaa" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_meeting_option.MeetingOption.test_meeting_option&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/aaaaa/a2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test_meeting_option.MeetingOption.test_meeting_order_create_02" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="re_data_yaml" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="wwwJK" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/case/home page" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/common" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_meeting_option.MeetingOption.test_meeting_order_create_02&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/common/re_data_yaml.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test_meeting_option.MeetingOption.test_order_pay" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="run_all" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="wwwJK" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/case/home page" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_meeting_option.MeetingOption.test_order_pay&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run_all.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <configuration name="Unittests in test_meeting_option.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
@@ -448,35 +493,19 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in test_start.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="wwwJK" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/case/home page/advertisement" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/case/home page/test_start.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Python tests.Unittests in test_start.py" />
-      <item itemvalue="Python.a1" />
       <item itemvalue="Python tests.Unittests in test_meeting_option.py" />
-      <item itemvalue="Python tests.Unittests for test_meeting_option.MeetingOption.test_meeting_order_create_02" />
-      <item itemvalue="Python tests.Unittests for test_meeting_option.MeetingOption.test_order_pay" />
-      <item itemvalue="Python tests.Unittests for test_meeting_option.MeetingOption.test_meeting_option" />
+      <item itemvalue="Python.re_data_yaml" />
+      <item itemvalue="Python.a1" />
+      <item itemvalue="Python.a2" />
+      <item itemvalue="Python.run_all" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests for test_meeting_option.MeetingOption.test_order_pay" />
-        <item itemvalue="Python tests.Unittests for test_meeting_option.MeetingOption.test_meeting_option" />
+        <item itemvalue="Python.run_all" />
+        <item itemvalue="Python.re_data_yaml" />
+        <item itemvalue="Python.a2" />
         <item itemvalue="Python tests.Unittests in test_meeting_option.py" />
-        <item itemvalue="Python tests.Unittests for test_meeting_option.MeetingOption.test_meeting_order_create_02" />
         <item itemvalue="Python.a1" />
       </list>
     </recent_temporary>
@@ -499,62 +528,78 @@
       <option name="project" value="LOCAL" />
       <updated>1548077983186</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="代码优化">
+      <created>1552619425606</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1552619425606</updated>
+    </task>
+    <task id="LOCAL-00003" summary="代码优化">
+      <created>1552647399233</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1552647399233</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_test_meeting_option_MeetingOption_test_order_pay - 2019.03.14 at 16h 02m 11s.xml">
-      <configuration name="Unittests for test_meeting_option.MeetingOption.test_order_pay" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_meeting_option_MeetingOption_test_order_pay - 2019.03.14 at 16h 02m 43s.xml">
-      <configuration name="Unittests for test_meeting_option.MeetingOption.test_order_pay" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_meeting_option_MeetingOption_test_order_pay - 2019.03.14 at 16h 03m 26s.xml">
-      <configuration name="Unittests for test_meeting_option.MeetingOption.test_order_pay" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_meeting_option_MeetingOption_test_meeting_order_create_02 - 2019.03.14 at 16h 04m 01s.xml">
-      <configuration name="Unittests for test_meeting_option.MeetingOption.test_meeting_order_create_02" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_meeting_option_py - 2019.03.14 at 16h 04m 19s.xml">
+    <history-entry file="Unittests_in_test_meeting_option_py - 2019.03.15 at 17h 40m 28s.xml">
       <configuration name="Unittests in test_meeting_option.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_meeting_option_MeetingOption_test_meeting_option - 2019.03.14 at 16h 04m 36s.xml">
-      <configuration name="Unittests for test_meeting_option.MeetingOption.test_meeting_option" configurationId="tests" />
+    <history-entry file="Unittests_in_test_meeting_option_py - 2019.03.15 at 17h 42m 54s.xml">
+      <configuration name="Unittests in test_meeting_option.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_meeting_option_MeetingOption_test_order_pay - 2019.03.14 at 16h 05m 02s.xml">
-      <configuration name="Unittests for test_meeting_option.MeetingOption.test_order_pay" configurationId="tests" />
+    <history-entry file="Unittests_in_test_meeting_option_py - 2019.03.15 at 17h 43m 12s.xml">
+      <configuration name="Unittests in test_meeting_option.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_meeting_option_MeetingOption_test_order_pay - 2019.03.14 at 16h 05m 35s.xml">
-      <configuration name="Unittests for test_meeting_option.MeetingOption.test_order_pay" configurationId="tests" />
+    <history-entry file="Unittests_in_test_meeting_option_py - 2019.03.15 at 17h 44m 15s.xml">
+      <configuration name="Unittests in test_meeting_option.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_meeting_option_MeetingOption_test_order_pay - 2019.03.14 at 16h 09m 53s.xml">
-      <configuration name="Unittests for test_meeting_option.MeetingOption.test_order_pay" configurationId="tests" />
+    <history-entry file="Unittests_in_test_meeting_option_py - 2019.03.15 at 17h 45m 27s.xml">
+      <configuration name="Unittests in test_meeting_option.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_meeting_option_MeetingOption_test_order_pay - 2019.03.14 at 16h 10m 24s.xml">
-      <configuration name="Unittests for test_meeting_option.MeetingOption.test_order_pay" configurationId="tests" />
+    <history-entry file="Unittests_in_test_meeting_option_py - 2019.03.15 at 17h 45m 45s.xml">
+      <configuration name="Unittests in test_meeting_option.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_meeting_option_py - 2019.03.15 at 17h 50m 14s.xml">
+      <configuration name="Unittests in test_meeting_option.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_meeting_option_py - 2019.03.15 at 18h 01m 30s.xml">
+      <configuration name="Unittests in test_meeting_option.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_meeting_option_py - 2019.03.15 at 18h 01m 44s.xml">
+      <configuration name="Unittests in test_meeting_option.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_meeting_option_py - 2019.03.15 at 18h 42m 24s.xml">
+      <configuration name="Unittests in test_meeting_option.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17170954" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17170954" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" weight="0.3295082" />
       <window_info anchor="bottom" id="调试" order="0" weight="0.44262296" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.3295082" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49848714" weight="0.352459" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49848714" visible="true" weight="0.39344263" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3295082" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5015129" side_tool="true" weight="0.3262295" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.3295082" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.3295082" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.3289689" />
+      <window_info anchor="right" id="Coverage" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -601,13 +646,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/case/home page/test_meeting_option.py</url>
-          <line>31</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
@@ -619,45 +657,12 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/logs/2019_01_24 10_40.log" />
-    <entry file="file://$PROJECT_DIR$/report/2019_01_24 10_41result.html" />
-    <entry file="file://$PROJECT_DIR$/config/readConfig.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/2019_01_24 10_56result.html" />
-    <entry file="file://$PROJECT_DIR$/logs/2019_01_24 10_56.log" />
-    <entry file="file://D:/测试工具安装/Python/Lib/site-packages/ruamel/yaml/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="1194" column="4" selection-start-line="1194" selection-start-column="4" selection-end-line="1194" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/测试工具安装/Python/Lib/typing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="1475" column="14" selection-start-line="1475" selection-start-column="8" selection-end-line="1475" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/get_token.py" />
     <entry file="file://$PROJECT_DIR$/logs/2019_01_24 15_32.log" />
     <entry file="file://$PROJECT_DIR$/logs/2019_01_28 16_29.log" />
     <entry file="file://$PROJECT_DIR$/report/2019_01_28 16_29result.html" />
     <entry file="file://$PROJECT_DIR$/logs/2019_01_30 17_36.log" />
     <entry file="file://$PROJECT_DIR$/logs/2019_01_30 17_38.log" />
     <entry file="file://$PROJECT_DIR$/logs/2019_01_30 17_39.log" />
-    <entry file="file://$PROJECT_DIR$/aaaaa/a2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/report/2019_01_30 17_39result.html" />
     <entry file="file://$PROJECT_DIR$/aaaaa/a3.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -692,6 +697,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-465">
           <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+          <folding>
+            <element signature="e#27#42#0" expanded="true" />
+            <marker date="1552462227801" expanded="true" signature="169:174" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -722,6 +731,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="281">
           <caret line="33" column="26" lean-forward="true" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+          <folding>
+            <element signature="e#15#30#0" expanded="true" />
+            <marker date="1552469533294" expanded="true" signature="218:223" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -736,6 +749,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-961">
           <caret line="41" column="32" lean-forward="true" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
+          <folding>
+            <element signature="e#42#57#0" expanded="true" />
+            <marker date="1552468336871" expanded="true" signature="179:184" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -743,6 +760,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2268">
           <caret line="132" column="29" selection-start-line="132" selection-start-column="29" selection-end-line="132" selection-end-column="29" />
+          <folding>
+            <element signature="e#80#95#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -750,6 +770,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
           <caret line="29" column="42" selection-start-line="29" selection-end-line="30" />
+          <folding>
+            <element signature="e#22#37#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -774,26 +797,105 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/get_time.py">
+    <entry file="file://D:/测试工具安装/Python/Lib/os.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="37" column="26" lean-forward="true" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
+        <state relative-caret-position="126">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/host.yaml">
+    <entry file="file://D:/测试工具安装/Python/Lib/site-packages/yaml/constructor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="10" lean-forward="true" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+        <state relative-caret-position="71">
+          <caret line="125" selection-start-line="125" selection-end-line="125" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/logger.py">
+    <entry file="file://D:/测试工具安装/Python/Lib/unittest/case.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="125">
+          <caret line="456" column="8" selection-start-line="456" selection-start-column="8" selection-end-line="456" selection-end-column="8" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/2019_03_15 21_22result.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_all.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="70" column="26" lean-forward="true" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aaaaa/a2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="15" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aaaaa/a1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/home page/test_meeting_option.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="251" column="16" lean-forward="true" selection-start-line="251" selection-start-column="16" selection-end-line="251" selection-end-column="16" />
+          <folding>
+            <element signature="e#96#111#0" expanded="true" />
+            <element signature="e#731#735#0" />
+            <element signature="e#780#1281#0" />
+            <element signature="e#1776#2612#0" />
+            <element signature="e#1973#2314#0" />
+            <element signature="e#2657#3192#0" />
+            <element signature="e#2842#2953#0" />
+            <element signature="e#2886#2893#0" />
+            <element signature="e#3243#3597#0" />
+            <element signature="e#3651#4330#0" />
+            <element signature="e#3906#4144#0" />
+            <element signature="e#4224#4822#0" />
+            <element signature="e#4916#6105#0" />
+            <element signature="e#5702#5988#0" />
+            <element signature="e#6004#6059#0" />
+            <element signature="e#6222#7482#0" />
+            <element signature="e#7528#8832#0" />
+            <marker date="1552646539938" expanded="true" signature="562:581" ph="..." />
+            <marker date="1552646539938" expanded="false" signature="1155:3032" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order_code.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/cfg.ini">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/HTMLTestRunner.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/readConfig.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-70" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/common/token.yaml">
       <provider selected="true" editor-type-id="text-editor">
@@ -802,45 +904,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/order_code.yaml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/re_data_yaml.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+        <state relative-caret-position="618">
+          <caret line="101" column="26" lean-forward="true" selection-start-line="101" selection-start-column="26" selection-end-line="101" selection-end-column="26" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <marker date="1552549117222" expanded="true" signature="2142:3422" ph="..." />
+            <marker date="1552647328522" expanded="true" signature="2171:3519" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/aaaaa/a1.py">
+    <entry file="file://$PROJECT_DIR$/common/order_code.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="29" column="1" selection-start-line="6" selection-end-line="32" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="18">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run_all.py">
+    <entry file="file://$PROJECT_DIR$/common/logger.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1170">
-          <caret line="70" column="26" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
+        <state relative-caret-position="-556">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/case/home page/test_meeting_option.py">
+    <entry file="file://$PROJECT_DIR$/common/host.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="176" column="19" lean-forward="true" selection-start-line="176" selection-start-column="19" selection-end-line="176" selection-end-column="19" />
-          <folding>
-            <marker date="1552551023601" expanded="false" signature="461:480" ph="..." />
-            <marker date="1552551023601" expanded="true" signature="1054:2931" ph="..." />
-          </folding>
+        <state relative-caret-position="36">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/get_time.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="37" column="26" lean-forward="true" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
         </state>
       </provider>
     </entry>
